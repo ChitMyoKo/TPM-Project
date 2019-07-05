@@ -3,24 +3,17 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:showIn="navigation_view">
         <group
-                android:id="@+id/gp1"
                 android:checkableBehavior="single">
             <item
                     android:id="@+id/nav_home"
                     android:icon="@drawable/ic_menu_camera"
                     android:title="@string/menu_profile"/>
-        </group>
-        <group
                 android:id="@+id/gp2"
                 android:checkableBehavior="single">
             <item
                     android:id="@+id/nav_gallery"
                     android:icon="@drawable/ic_menu_gallery"
                     android:title="@string/menu_aboutus"/>
-        </group>
-        <group
-                android:id="@+id/gp3"
-                android:checkableBehavior="single">
             <item
                     android:id="@+id/nav_slideshow"
                     android:icon="@drawable/ic_menu_slideshow"

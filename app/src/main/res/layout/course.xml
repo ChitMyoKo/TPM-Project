@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:layout_centerHorizontal="true">
+              android:layout_centerHorizontal="true"
+              android:background="@drawable/course_layout_round"
+              android:layout_marginTop="12dp"
+              android:layout_marginLeft="12dp"
+              android:layout_marginRight="12dp">
 
     <ImageView
             android:id="@+id/ivCourseIcon"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerVertical="true"
+            android:scaleType="fitXY"
             android:src="@drawable/ic_launcher_foreground"/>
     <TextView
             android:id="@+id/tvCourseName"
             android:layout_toEndOf="@+id/ivCourseIcon"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@color/colorWhite"
             />
 
 </RelativeLayout>

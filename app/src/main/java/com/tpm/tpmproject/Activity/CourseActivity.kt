@@ -21,9 +21,12 @@ class CourseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_course)
-        var course_1 = Course("Java")
-        var course_2 = Course("PHP")
-        var courseArr = mutableListOf<Course>(course_1, course_2)
+        var course_1 = Course("Android Development")
+        var course_2 = Course("PHP Development")
+        var course_3 = Course("Java Development")
+        var course_4 = Course("Design Implementation")
+        var course_5 = Course("Computer Basic")
+        var courseArr = mutableListOf<Course>(course_1, course_2,course_3,course_4,course_5)
         var adapter = CourseAdapter(this,R.layout.course,courseArr)
         rcCourse.layoutManager = LinearLayoutManager(this)
         rcCourse.adapter = adapter

@@ -44,15 +44,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         btnTeachers.setOnClickListener {
             startActivity(TeacherActivity.newIntent(this))
-            finish()
+            //finish()
         }
         btnStudents.setOnClickListener {
             startActivity(StudentActivity.newIntent(this))
-            finish()
+            //finish()
         }
         btnCourse.setOnClickListener {
             startActivity(CourseActivity.newIntent(this))
-            finish()
+            //finish()
         }
     }
 
