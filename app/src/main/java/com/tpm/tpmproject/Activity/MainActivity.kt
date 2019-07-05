@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import com.tpm.tpmproject.R
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -40,6 +41,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         navView.setNavigationItemSelectedListener(this)
+
+        btnTeachers.setOnClickListener {
+            startActivity(TeacherActivity.newIntent(this))
+            finish()
+        }
+        btnStudents.setOnClickListener {
+            startActivity(StudentActivity.newIntent(this))
+            finish()
+        }
+        btnCourse.setOnClickListener {
+            startActivity(CourseActivity.newIntent(this))
+            finish()
+        }
     }
 
     override fun onBackPressed() {

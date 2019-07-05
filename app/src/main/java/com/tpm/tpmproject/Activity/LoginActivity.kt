@@ -1,8 +1,8 @@
-package com.tpm.tpmproject
+package com.tpm.tpmproject.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.tpm.tpmproject.Activity.MainActivity
+import com.tpm.tpmproject.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -13,6 +13,7 @@ class LoginActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener {
             startActivity(MainActivity.newIntent(this))
+            finish()
         }
     }
 }
