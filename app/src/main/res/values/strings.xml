@@ -18,4 +18,8 @@
     <string name="nav_header_track">Mobility</string>
     <string name="nav_header_batch">Batch 1</string>
     <string name="profession">Android</string>
+    <string name="teachers">Teachers</string>
+    <string name="courses">Courses</string>
+    <string name="students">Students</string>
+    <string name="activities">Activities</string>
 </resources>

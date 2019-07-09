@@ -24,10 +24,10 @@ class StudentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student)
 
-        var student_1 = Person("Ye Lin Aung","Android")
-        var student_2 = Person("Mya Mya Khaing","Android")
-        var student_3 = Person("Chit Myo Ko","Android")
-        var student_4 = Person("Pyae Pyae Win","Android")
+        var student_1 = Person("Ye Lin Aung","Android",R.drawable.msp)
+        var student_2 = Person("Mya Mya Khaing","Android",R.drawable.msp)
+        var student_3 = Person("Chit Myo Ko","Android",R.drawable.msp)
+        var student_4 = Person("Pyae Pyae Win","Android",R.drawable.msp)
 
         var studentArr = mutableListOf<Person>(student_1,student_2,student_3,student_4)
         var adapter  = PersonAdapter(this,R.layout.person,studentArr)

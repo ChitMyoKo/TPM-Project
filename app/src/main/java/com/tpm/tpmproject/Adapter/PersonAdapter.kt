@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.tpm.tpmproject.Activity.StudentProfileActivity
 import com.tpm.tpmproject.DataClass.Person
 import com.tpm.tpmproject.ViewHolders.PersonViewHolder
 
@@ -22,6 +23,10 @@ class PersonAdapter(var context: Context, var layout: Int ,var list: List<Person
     override fun onBindViewHolder(holder: PersonViewHolder, position: Int) {
         holder.name.text = list[position].name
         holder.profession.text = list[position].profession
+        holder.profile.setImageResource(list[position].profile)
+        holder.itemView.setOnClickListener {
+            context.startActivity(StudentProfileActivity.newIntent(context))
+        }
     }
 
 }

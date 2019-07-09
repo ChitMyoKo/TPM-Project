@@ -7,4 +7,5 @@ import kotlinx.android.synthetic.main.person.view.*
 class PersonViewHolder(view: View): RecyclerView.ViewHolder(view) {
     var name = view.tvPersonName
     var profession = view.tvProfession
+    var profile = view.ivPerson
 }

@@ -42,17 +42,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         navView.setNavigationItemSelectedListener(this)
 
-        btnTeachers.setOnClickListener {
+        layoutTeacher.setOnClickListener {
             startActivity(TeacherActivity.newIntent(this))
             //finish()
         }
-        btnStudents.setOnClickListener {
+        layoutStudent.setOnClickListener {
             startActivity(StudentActivity.newIntent(this))
             //finish()
         }
-        btnCourse.setOnClickListener {
+        layoutCourse.setOnClickListener {
             startActivity(CourseActivity.newIntent(this))
             //finish()
+        }
+        layoutActivities.setOnClickListener {
+
         }
     }
 

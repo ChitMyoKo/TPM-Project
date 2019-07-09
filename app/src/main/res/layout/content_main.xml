@@ -14,42 +14,112 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/tpm_background"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
             android:layout_weight="2"/>
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
-        <ImageButton
-                android:id="@+id/btnCourse"
+        <RelativeLayout
+                android:id="@+id/layoutCourse"
                 android:layout_width="180dp"
                 android:layout_height="170dp"
-                android:background="@drawable/activity"
-                android:scaleType="fitXY"/>
-        <ImageButton
-                android:id="@+id/btnTeachers"
+                android:background="@color/colorViolet">
+
+            <ImageView
+                    android:id="@+id/ivCourse"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/course"
+                    android:tint="@color/colorWhite"
+                    android:layout_centerInParent="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/courses"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/ivCourse"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/layoutTeacher"
                 android:layout_width="match_parent"
                 android:layout_height="270dp"
-                android:background="@drawable/activity"
-                android:scaleType="fitXY"
-                android:layout_toEndOf="@+id/btnCourse"/>
-        <ImageButton
-                android:id="@+id/btnStudents"
+                android:background="@color/colorBrown"
+                android:layout_toEndOf="@+id/layoutCourse">
+
+            <ImageView
+                    android:id="@+id/ivTeacher"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/teacher"
+                    android:tint="@color/colorWhite"
+                    android:layout_centerInParent="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teachers"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/ivTeacher"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/layoutStudent"
                 android:layout_width="180dp"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/btnCourse"
-                android:background="@drawable/activity"
-                android:scaleType="fitXY"/>
-        <ImageButton
-                android:id="@+id/btnActivities"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/layoutCourse">
+
+            <ImageView
+                    android:id="@+id/ivStudent"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/student"
+                    android:tint="@color/colorWhite"
+                    android:layout_centerInParent="true"/>
+            <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/students"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/ivStudent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/layoutActivities"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/activity"
-                android:scaleType="fitXY"
-                android:layout_toEndOf="@+id/btnStudents"
-                android:layout_below="@+id/btnTeachers"
-                />
+                android:layout_height="270dp"
+                android:background="@color/colorBlue"
+                android:layout_toEndOf="@+id/layoutStudent"
+                android:layout_below="@+id/layoutTeacher">
 
+            <ImageView
+                    android:id="@+id/ivActivities"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/event"
+                    android:tint="@color/colorWhite"
+                    android:layout_centerInParent="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activities"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/ivActivities"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
     </RelativeLayout>
-
 </LinearLayout>
