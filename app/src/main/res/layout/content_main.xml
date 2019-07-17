@@ -8,7 +8,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:showIn="@layout/app_bar_main"
         android:orientation="vertical"
-        tools:context=".Activity.MainActivity"
+        tools:context=".ui.MainActivity"
         android:weightSum="3">
     <ImageView
             android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         <RelativeLayout
                 android:id="@+id/layoutTeacher"
                 android:layout_width="match_parent"
-                android:layout_height="270dp"
+                android:layout_height="250dp"
                 android:background="@color/colorBrown"
                 android:layout_toEndOf="@+id/layoutCourse">
 

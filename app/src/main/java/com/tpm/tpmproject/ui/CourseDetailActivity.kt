@@ -1,11 +1,11 @@
-package com.tpm.tpmproject.Activity
+package com.tpm.tpmproject.ui
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tpm.tpmproject.Adapter.CourseDetailsAdapter
+import com.tpm.tpmproject.adapter.CourseDetailsAdapter
 import com.tpm.tpmproject.R
 import kotlinx.android.synthetic.main.activity_course_detail.*
 

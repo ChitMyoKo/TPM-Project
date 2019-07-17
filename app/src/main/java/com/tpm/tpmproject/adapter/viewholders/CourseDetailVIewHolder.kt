@@ -1,4 +1,4 @@
-package com.tpm.tpmproject.ViewHolders
+package com.tpm.tpmproject.adapter.viewholders
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

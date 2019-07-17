@@ -1,12 +1,12 @@
-package com.tpm.tpmproject.Activity
+package com.tpm.tpmproject.ui
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tpm.tpmproject.Adapter.CourseAdapter
-import com.tpm.tpmproject.DataClass.Course
+import com.tpm.tpmproject.adapter.CourseAdapter
+import com.tpm.tpmproject.model.Course
 import com.tpm.tpmproject.R
 import kotlinx.android.synthetic.main.activity_course.*
 
@@ -21,6 +21,9 @@ class CourseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_course)
+
+        courseToolbar.setTitle(R.string.courseToolbar)
+        setSupportActionBar(courseToolbar)
         var course_1 = Course("Android Development",R.drawable.android)
         var course_2 = Course("PHP Development",R.drawable.php)
         var course_3 = Course("Java Development",R.drawable.java)

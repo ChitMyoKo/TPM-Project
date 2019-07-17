@@ -1,4 +1,4 @@
-package com.tpm.tpmproject.Activity
+package com.tpm.tpmproject.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

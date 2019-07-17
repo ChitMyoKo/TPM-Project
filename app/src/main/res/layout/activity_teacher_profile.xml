@@ -1,70 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.StudentProfileActivity">
+        android:orientation="vertical"
+        tools:context=".ui.TeacherProfileActivity">
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="190dp"
-                android:background="@drawable/gradient_color">
+                android:layout_height="190dp">
             <ImageButton
                     android:layout_margin="8dp"
-                    android:id="@+id/btnBack"
+                    android:id="@+id/btnBackTeacher"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/back"/>
             <androidx.cardview.widget.CardView
                     android:layout_marginLeft="16dp"
-                    android:id="@+id/cvProfile"
-                    android:layout_below="@+id/btnBack"
+                    android:id="@+id/cvTeacherProfile"
+                    android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="50dp">
                 <ImageView
-                        android:id="@+id/ivProfile"
+                        android:id="@+id/ivTeacherProfile"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/msp"/>
             </androidx.cardview.widget.CardView>
-            <LinearLayout
-                    android:layout_toEndOf="@+id/cvProfile"
-                    android:layout_alignBottom="@+id/cvProfile"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                <TextView
-                        android:layout_margin="8dp"
-                        android:id="@+id/tvNameProfile"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:textColor="@color/colorWhite"
-                        android:fontFamily="sans-serif-condensed"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="Profile Name"/>
-                <TextView
-                        android:id="@+id/tvProfileProfession"
-                        android:layout_margin="8dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="17sp"
-                        android:text="Profession"/>
-            </LinearLayout>
 
+            <TextView
+                    android:layout_below="@+id/cvTeacherProfile"
+                    android:layout_toEndOf="@+id/cvTeacherProfile"
+                    android:id="@+id/tvTeacherName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ma Thaw Zin Aung"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
 
         </RelativeLayout>
         <LinearLayout
@@ -77,7 +57,7 @@
                     android:layout_height="50dp">
                 <ImageView
                         android:layout_centerInParent="true"
-                        android:id="@+id/ivWork"
+                        android:id="@+id/ivTeacherWork"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/work"
@@ -91,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                 <TextView
-                        android:id="@+id/tvWork"
+                        android:id="@+id/tvTeacherWork"
                         android:layout_marginLeft="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -119,51 +99,10 @@
                     android:layout_height="50dp">
                 <ImageView
                         android:layout_centerInParent="true"
-                        android:id="@+id/ivOffice"
+                        android:id="@+id/ivTeacherOffice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/office"
-                        android:scaleType="centerCrop"/>
-            </RelativeLayout>
-
-            <LinearLayout
-                    android:layout_marginLeft="4dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                <TextView
-                        android:id="@+id/tvOffice"
-                        android:layout_marginLeft="4dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-condensed"
-                        android:textSize="20sp"
-                        android:text="@string/office"
-                        android:layout_centerInParent="true"/>
-                <View
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="4dp"
-                        android:layout_width="match_parent"
-                        android:background="@color/colorBlack"
-                        android:layout_height="1dp"/>
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_marginTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-            <RelativeLayout
-                    android:layout_width="50dp"
-                    android:layout_height="50dp">
-                <ImageView
-                        android:layout_centerInParent="true"
-                        android:id="@+id/ivAddress"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/address"
                         android:scaleType="centerCrop"
                         android:tint="@color/colorAccent"/>
             </RelativeLayout>
@@ -174,23 +113,24 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                 <TextView
-                        android:id="@+id/tvAddress"
+                        android:id="@+id/tvTeacherOffice"
                         android:layout_marginLeft="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:textSize="20sp"
-                        android:text="@string/address"
-                        android:layout_centerInParent="true"/>
+                        android:text="@string/office"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/colorAccent"/>
                 <View
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="4dp"
                         android:layout_width="match_parent"
                         android:background="@color/colorBlack"
                         android:layout_height="1dp"/>
+
             </LinearLayout>
         </LinearLayout>
-
         <LinearLayout
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -201,7 +141,7 @@
                     android:layout_height="50dp">
                 <ImageView
                         android:layout_centerInParent="true"
-                        android:id="@+id/ivBirthday"
+                        android:id="@+id/ivTeacherBirthday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/birthday"
@@ -215,23 +155,24 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                 <TextView
-                        android:id="@+id/tvBirthday"
+                        android:id="@+id/tvTeacherBirthday"
                         android:layout_marginLeft="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:textSize="20sp"
                         android:text="@string/birthday"
-                        android:layout_centerInParent="true"/>
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/colorAccent"/>
                 <View
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="4dp"
                         android:layout_width="match_parent"
                         android:background="@color/colorBlack"
                         android:layout_height="1dp"/>
+
             </LinearLayout>
         </LinearLayout>
-
         <LinearLayout
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -242,48 +183,7 @@
                     android:layout_height="50dp">
                 <ImageView
                         android:layout_centerInParent="true"
-                        android:id="@+id/ivGrade"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/grade"
-                        android:scaleType="centerCrop"
-                        android:tint="@color/colorAccent"/>
-            </RelativeLayout>
-
-            <LinearLayout
-                    android:layout_marginLeft="4dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                <TextView
-                        android:id="@+id/tvGrade"
-                        android:layout_marginLeft="4dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-condensed"
-                        android:textSize="20sp"
-                        android:text="@string/grade"
-                        android:layout_centerInParent="true"/>
-                <View
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="4dp"
-                        android:layout_width="match_parent"
-                        android:background="@color/colorBlack"
-                        android:layout_height="1dp"/>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_marginTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-            <RelativeLayout
-                    android:layout_width="50dp"
-                    android:layout_height="50dp">
-                <ImageView
-                        android:layout_centerInParent="true"
-                        android:id="@+id/ivPhone"
+                        android:id="@+id/ivTeacherPhone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/phone"
@@ -297,23 +197,24 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                 <TextView
-                        android:id="@+id/tvPhone"
+                        android:id="@+id/tvTeacherPhone"
                         android:layout_marginLeft="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:textSize="20sp"
                         android:text="@string/phone"
-                        android:layout_centerInParent="true"/>
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/colorAccent"/>
                 <View
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="4dp"
                         android:layout_width="match_parent"
                         android:background="@color/colorBlack"
                         android:layout_height="1dp"/>
+
             </LinearLayout>
         </LinearLayout>
-
         <LinearLayout
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -324,7 +225,7 @@
                     android:layout_height="50dp">
                 <ImageView
                         android:layout_centerInParent="true"
-                        android:id="@+id/ivEmail"
+                        android:id="@+id/ivTeacherEmail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/email"
@@ -338,14 +239,15 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                 <TextView
-                        android:id="@+id/tvEmail"
+                        android:id="@+id/tvTeacherEmail"
                         android:layout_marginLeft="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:textSize="20sp"
                         android:text="@string/email"
-                        android:layout_centerInParent="true"/>
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/colorAccent"/>
                 <View
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="4dp"
@@ -355,7 +257,30 @@
 
             </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_alignParentBottom="true"/>
+    <RelativeLayout
+            android:layout_marginBottom="16dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/messager_round"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+        <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/messager_round1">
+            <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/messages"/>
+        </RelativeLayout>
+    </RelativeLayout>
 
-</ScrollView>
+</RelativeLayout>

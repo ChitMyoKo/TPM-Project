@@ -1,12 +1,12 @@
-package com.tpm.tpmproject.Adapter
+package com.tpm.tpmproject.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.tpm.tpmproject.Activity.CourseDetailActivity
-import com.tpm.tpmproject.DataClass.Course
-import com.tpm.tpmproject.ViewHolders.CourseViewHolder
+import com.tpm.tpmproject.ui.CourseDetailActivity
+import com.tpm.tpmproject.model.Course
+import com.tpm.tpmproject.adapter.viewholders.CourseViewHolder
 
 class CourseAdapter(var context: Context,var layout: Int, var list: List<Course>): RecyclerView.Adapter<CourseViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CourseViewHolder {

@@ -1,10 +1,10 @@
-package com.tpm.tpmproject.Adapter
+package com.tpm.tpmproject.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.tpm.tpmproject.ViewHolders.CourseDetailVIewHolder
+import com.tpm.tpmproject.adapter.viewholders.CourseDetailVIewHolder
 
 class CourseDetailsAdapter(var context: Context,var layout : Int,var list : List<String>):
     RecyclerView.Adapter<CourseDetailVIewHolder>() {

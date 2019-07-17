@@ -22,4 +22,21 @@
     <string name="courses">Courses</string>
     <string name="students">Students</string>
     <string name="activities">Activities</string>
+
+
+    <string name="work">Android Developer</string>
+    <string name="office">Ace Plus Solution Co.ltd</string>
+    <string name="address">Pantanaw St, SanChaung</string>
+    <string name="birthday">1/2/1996</string>
+    <string name="grade">Grade A</string>
+    <string name="phone">+95951104661</string>
+    <string name="email">myosatpaing@gmail.com</string>
+
+    <string name="filter">Filter</string>
+
+    <string name="studentToolbar">Students</string>
+    <string name="teacaherToolbar">Teachers</string>
+    <string name="courseToolbar">Courses</string>
+    <string name="activitiesToolbar">Activities</string>
+
 </resources>

@@ -1,4 +1,4 @@
-package com.tpm.tpmproject.Activity
+package com.tpm.tpmproject.ui
 
 import android.content.Context
 import android.content.Intent
@@ -68,13 +68,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    /*override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -82,19 +77,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
         }
-    }
+    }*/
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_home -> {
-                // Handle the camera action
+            R.id.navProfile -> {
+                startActivity(StudentProfileActivity.newIntent(this,"Chit Myo Ko","Android",R.drawable.cmk))
             }
-            R.id.nav_gallery -> {
-
+            R.id.navAboutUs -> {
+                var intent = Intent(this,TeacherProfileActivity::class.java)
+                startActivity(intent)
             }
-            R.id.nav_slideshow -> {
-
+            R.id.navLogout -> {
+                startActivity(LoginActivity.newIntent(this))
+                finish()
             }
 
         }

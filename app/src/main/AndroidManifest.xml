@@ -9,19 +9,24 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Activity.StudentProfileActivity">
+        <activity android:name=".ui.TeacherProfileActivity">
         </activity>
-        <activity android:name=".Activity.CourseDetailActivity">
+        <activity android:name=".ui.StudentProfileActivity">
         </activity>
-        <activity android:name=".Activity.ActivitiesActivity">
+        <activity android:name=".ui.CourseDetailActivity">
         </activity>
-        <activity android:name=".Activity.TeacherActivity">
+        <activity android:name=".ui.ActivitiesActivity">
         </activity>
-        <activity android:name=".Activity.StudentActivity">
+        <activity
+                android:name=".ui.TeacherActivity">
         </activity>
-        <activity android:name=".Activity.CourseActivity">
+        <activity
+                android:name=".ui.StudentActivity">
         </activity>
-        <activity android:name=".Activity.LoginActivity">
+        <activity
+                android:name=".ui.CourseActivity">
+        </activity>
+        <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -29,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".Activity.MainActivity"
+                android:name=".ui.MainActivity"
                 android:label="@string/app_name"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

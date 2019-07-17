@@ -5,17 +5,17 @@
               android:layout_height="wrap_content"
               android:layout_centerHorizontal="true"
               android:background="@drawable/course_layout_round"
-              android:layout_marginTop="12dp"
+              android:layout_marginTop="8dp"
               android:layout_marginLeft="12dp"
               android:layout_marginRight="12dp">
 
     <ImageView
+            android:layout_margin="16dp"
             android:id="@+id/ivCourseIcon"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="4dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_centerVertical="true"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_foreground"/>
     <TextView
             android:id="@+id/tvCourseName"
