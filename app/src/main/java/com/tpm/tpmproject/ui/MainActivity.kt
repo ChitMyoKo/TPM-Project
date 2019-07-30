@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             //finish()
         }
         layoutActivities.setOnClickListener {
-
+            startActivity(ActivitiesActivity.newIntent(this))
         }
     }
 
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(StudentProfileActivity.newIntent(this,"Chit Myo Ko","Android",R.drawable.cmk))
             }
             R.id.navAboutUs -> {
-                var intent = Intent(this,TeacherProfileActivity::class.java)
+                var intent = Intent(this,ActivitiesActivity::class.java)
                 startActivity(intent)
             }
             R.id.navLogout -> {

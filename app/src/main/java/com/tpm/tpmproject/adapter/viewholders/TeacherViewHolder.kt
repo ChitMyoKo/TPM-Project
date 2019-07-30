@@ -9,9 +9,9 @@ class TeacherViewHolder(var view: View,private val onClickItem : (teacher : Teac
 
     fun setData(teacher: Teacher)
     {
-        view.tvPersonName.text = teacher.name
-        view.tvProfession.text = teacher.profession
-        view.ivPerson.setImageResource(teacher.profile)
+        view.tvTeacherName.text = teacher.name
+        view.tvTeacherProfession.text = teacher.profession
+        view.ivTeacher.setImageResource(teacher.profile)
 
         view.setOnClickListener {
             onClickItem(teacher)

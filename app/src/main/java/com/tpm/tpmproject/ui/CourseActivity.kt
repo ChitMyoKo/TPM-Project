@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tpm.tpmproject.adapter.CourseAdapter
 import com.tpm.tpmproject.model.Course
@@ -24,6 +25,8 @@ class CourseActivity : AppCompatActivity() {
 
         courseToolbar.setTitle(R.string.courseToolbar)
         setSupportActionBar(courseToolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         var course_1 = Course("Android Development",R.drawable.android)
         var course_2 = Course("PHP Development",R.drawable.php)
         var course_3 = Course("Java Development",R.drawable.java)
@@ -33,5 +36,14 @@ class CourseActivity : AppCompatActivity() {
         var adapter = CourseAdapter(this,R.layout.course,courseArr)
         rcCourse.layoutManager = LinearLayoutManager(this)
         rcCourse.adapter = adapter
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == android.R.id.home)
+        {
+            onBackPressed()
+            true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

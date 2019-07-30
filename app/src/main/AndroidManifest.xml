@@ -9,22 +9,25 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".ui.ActivitiesDetailsActivity">
+        </activity>
         <activity android:name=".ui.TeacherProfileActivity">
         </activity>
-        <activity android:name=".ui.StudentProfileActivity">
+        <activity
+                android:name=".ui.StudentProfileActivity"
+                android:theme="@style/AppThemeGoogleMaterial">
         </activity>
         <activity android:name=".ui.CourseDetailActivity">
         </activity>
         <activity android:name=".ui.ActivitiesActivity">
         </activity>
-        <activity
-                android:name=".ui.TeacherActivity">
+        <activity android:name=".ui.TeacherActivity">
         </activity>
         <activity
-                android:name=".ui.StudentActivity">
+                android:name=".ui.StudentActivity"
+                android:theme="@style/appThemeBottomSheet">
         </activity>
-        <activity
-                android:name=".ui.CourseActivity">
+        <activity android:name=".ui.CourseActivity">
         </activity>
         <activity android:name=".ui.LoginActivity">
             <intent-filter>

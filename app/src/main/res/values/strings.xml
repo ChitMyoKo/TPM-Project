@@ -39,4 +39,13 @@
     <string name="courseToolbar">Courses</string>
     <string name="activitiesToolbar">Activities</string>
 
+
+    <string name="course">Course</string>
+    <string name="android">Android</string>
+    <string name="php">PHP</string>
+    <string name="java">Java</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
 </resources>
